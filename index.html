@@ -2,46 +2,52 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
-        <title>CSS Stylesheets with Relative Paths</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Basic Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
     <body>
+        <!-- image credit
+            <img alt="Photo by Jonas Svidras on Unsplash"
+            <img alt="Bison Gate UCI monument sign Photo: Steve Zylius/UC Irvine Communications">
+            <img alt="Photo by Kevin Fremon on Unsplash"
+        -->
+
         <header>
-            <h1>Student Bio</h1>
+            <section id="content">
+                <div id="name">
+                    <h1 id="main-header">Kevin Tran</h1>
+                </div>
+                <nav>
+                    <ul id="nav-bar">
+                        <li class="divider nav-item"><a href="index.html">About</a></li>
+                        <li class="divider nav-item"><a href="portfolio.html">Portfolio</a></li> 
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
         </header>
-        <div class="container">
-            <section id="main-bio">
-                <h2>Kevin Tran</h2>
-                <img id="bio-image" src="./me.jpg" alt="I'm on a boat!">
+            
+        <section id="main-content">
+            <h2 id="about">About Me</h2>
+            <section id="bio">
+                <img id="bio-image" src="assets/images/me.jpg" alt="I'm on a boat!">
                 <p>
                     Hi, my name is Kevin Tran. I am a part-time student at the University of Oregon Full-Stack Flex Program.
                     My hobbies as of now are programming, playing my guitar, and hiking. So far programming is
                     going well. It's keeping me up at night, but I don't have any regrets.
                     <br><br>
-                    I am doing this program because I want to change career. I want to do creative and
+                    I am doing this program because I want to change my career. I want to do creative and
                     meaningful work while building relationships with interesting people. I believe 
                     this industry will open doors to work in that space. If things don't work out, at least
                     I know how to code. Also, coding is fun! 
                 </p>
             </section>
-            <section id="contact-info">
-            <h2>Contact Info</h2>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:ktran775@yahoo.com">ktran775@yahoo.com</a></li>
-                <li><strong>Github:</strong> <a target="_ " href="https://github.com/trnkev">Kevin Tran</a></li>
-                <li><strong>Portfolio:</strong> <a href="">coming soon</a></li>
-            </ul>
-            </section>
-            <section id="mailing-list">
-                <form>
-                    <h2>Get Updated on Kevin's Developement</h2>
-                    <ul>
-                        <li>Name: <input type="text"></li>
-                        <li>Email: <input type="email"></li>
-                    </ul>
-                    <input type="submit">
-                </form>
-            </section>
-        </div>
+        </section>
+
+        <footer>
+            <div id="footer-bar">
+                <div id="copyright">Copyright ©</div>
+            </div>
+        </footer>
     </body>
 </html>
