@@ -167,6 +167,7 @@ footer {
 
 #business {
     clear: both;
+    float: left;
 }
 
 .list {
@@ -175,4 +176,32 @@ footer {
 
 .image {
     position: relative;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    background: #4aaaa5;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.portfolio-text {
+    color: white;
+}
+
+.portfolio-section {
+    clear: both;
+    width: 960px;
+    height: 700px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
 }
