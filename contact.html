@@ -2,41 +2,82 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
-        <title>Basic Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <title>My First BootStrap Site</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     </head>
-    <body>
-        <header>
-            <section id="content">
-                <div id="name">
-                    <h1 id="main-header">Kevin Tran</h1>
+    <body class="bg-light">
+        <header class="sticky-top">
+            <div class="navbar rounded-0 p-0 bg-white">
+                <div class="container">
+                    <div class="col-3 bg-info h-100 py-1">
+                        <h1 class="text-white my-1">Kevin Tran</h1>
+                    </div>
+                    <div class="navbar-expand navbar-light p-0">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link py-0" href="index.html">About Me<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item border-right border-left">
+                                <a class="nav-link py-0" href="portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link py-0" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <nav>
-                    <ul id="nav-bar">
-                        <li class="divider nav-item"><a href="index.html">About</a></li>
-                        <li class="divider nav-item"><a href="portfolio.html">Portfolio</a></li> 
-                        <li class="nav-item"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </section>
-        </header>
-            
-        <section id="main-content">
-            <h2 id="about">Contact</h2>
-            <form id="bio">
-                <ul id="info">
-                    <li>Name<br><input class="user" type="text"></li>
-                    <li>Email<br><input class="user" type="email"></li>
-                    <li>Message<br><textarea id="text-input"></textarea></li>
-                </ul>
-                <input id="submit-button" type="submit">
-            </form>
-        </section>
-
-        <footer>
-            <div id="footer-bar">
-                <div id="copyright">Copyright ©</div>
+                <span class="border-bottom w-100"></span>
             </div>
+        </header>
+
+
+        <div class="row my-4 vh-100">
+            <div class="container overflow-auto">
+                <!-- main content -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card rounded-0">
+                            <!-- Row for header -->
+                            <div class="row py-3 pl-3">
+                                <div class="col-12">
+                                    <h2 class="text-info">Contact</h2>
+                                </div>
+                            </div>
+                            <span class="border-bottom mx-3"></span>
+                            <!-- Row for bio and picture -->
+                            <div class="row p-3">
+                                <div class="col-12"></div>
+                                    <form class="px-3 w-100">
+                                        <div class="form-group">
+                                            <label for="inputName">Name</label>
+                                            <input type="text" class="form-control rounded-0" id="inputName" aria-describedby="nameHelp" placeholder="John Smith">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputEmail">Email address</label>
+                                            <input type="email" class="form-control rounded-0" id="inputEmail" aria-describedby="emailHelp" placeholder="example@gmail.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="formControlTextarea">Message</label>
+                                            <textarea class="form-control rounded-0" id="formControlTextarea" rows="5"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary rounded-0 btn-info">Submit</button>
+                                    </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bd-footer pt-2 bg-info">
+                <div class="col-12 p-0">
+                        <div class="card rounded-0 bg-secondary">
+                            <div class="card-body">
+                                <div class="text-white text-center">Copyright©</div>
+                            </div>
+                        </div>
+                    </div>
         </footer>
+
     </body>
 </html>
