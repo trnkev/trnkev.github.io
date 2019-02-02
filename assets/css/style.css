@@ -7,7 +7,6 @@ body {
 }
 
 h1,h2 {
-    /*background: #4aaaa5;*/
     color: #4aaaa5;
     font-family: Georgia, Times, "Times New Roman", serif;
 }
@@ -18,23 +17,6 @@ nav {
     position: relative;
 }
 
-#nav-bar {
-    right: 0;
-    position: absolute;
-}
-
-.nav-item {
-    display: inline;
-    padding: 0 20px;
-}
-
-#bio {
-    border-top-style: solid;
-    border-width: 1px;
-    border-color: #dddddd;
-    margin: 20px;
-}
-
 a:link, a:visited {
     text-decoration: none;
     color: #777777;
@@ -43,39 +25,86 @@ a:link, a:visited {
 header {
     background: #ffffff;
     border-style: solid none;
-    border-width: 1px;
+    border-width: 2px;
     border-color: #cccccc;
     margin: 20px auto;
     height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
 }
 
 footer {
-    bottom: 0;
-    position: absolute;
     width: 100%;
     text-align: center;
 }
 
-#name {
+input {
+    cursor: pointer;
+    transition: width .1s;
+}
+
+input:hover {
+    width: 30%;
+}
+
+.nav-item {
+    display: inline;
+    padding: 0 20px;
+}
+
+.nav-bar {
+    right: 0;
+    position: absolute;
+
+}
+
+.main-container {
+    min-height: calc(100vh - 58px);
+    padding-top: 100px;
+}
+
+.wrap {
+    border-top-style: solid;
+    border-width: 2px;
+    border-color: #dddddd;
+    margin: 20px;
+}
+
+.name {
     float: left;
     background: #4aaaa5;
     height: 100%;
     width: 30%;
+
 }
 
-#content {
+.content {
     width: 960px;
     margin: auto;
     height: 100%;
 }
 
-#main-header {
-    background: #4aaaa5;
+.main-header {
+    /* background: #4aaaa5; */
     color: #ffffff;
     padding-left: 20px;
+    animation-duration: .5s;
+    animation-name: slide;
 } 
 
-#main-content {
+@keyframes slide {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.main-content {
     clear: both;
     width: 960px;
     height: 400px;
@@ -86,7 +115,7 @@ footer {
     border-color: #dddddd;
 }
 
-#about {
+.about {
     margin: 40px 20px;
 
 }
@@ -99,17 +128,14 @@ footer {
     padding-top: 20px;
 }
 
-#footer-bar {
+.footer-bar {
     background: #777777;
     border-top: 10px solid #4aaaa5;
 }
 
-#copyright {
+.copyright {
     color: #ffffff;
     padding: 20px 0 10px;
-}
-
-#info {
 }
 
 .divider {
@@ -119,6 +145,7 @@ footer {
 #info {
     list-style: none;
     padding: 0;
+    margin-bottom: 0;
 }
 
 .user {
@@ -143,12 +170,12 @@ footer {
     padding: 0;
     overflow: scroll;
     width: 100%;
-    height: 250px;
+    height: 750px;
 }
 
 #city {
     float: left;
-    padding-right: 120px;
+    padding-right: 50px;
 }
 
 #bike {
@@ -158,7 +185,7 @@ footer {
 #car {
     clear: both;
     float: left;
-    padding-right: 120px;
+    padding-right: 50px;
 }
 
 #food {
@@ -171,7 +198,7 @@ footer {
 }
 
 .list {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .image {
@@ -193,15 +220,137 @@ footer {
 
 .portfolio-text {
     color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
+
+
 
 .portfolio-section {
     clear: both;
     width: 960px;
-    height: 700px;
+    height: 916px;
     margin: 20px auto;
     background: #ffffff;
     border-style: solid;
     border-width: 1px;
     border-color: #dddddd;
+}
+
+.images {
+    width: 400px;
+}
+
+.fields {
+    padding-bottom: 5px;
+}
+
+li a:hover {
+    color: #7764f0;
+}
+
+
+@media screen and (max-width: 980px) {
+    .content {
+        width: 90%;
+    }
+
+    .main-content {
+        width: 90%;
+    }
+
+    .portfolio-section {
+        width: 90%;
+    }
+    .images {
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .images {
+        width: 260px;
+    }
+
+    #bike, #food {
+        float: right;
+    }
+
+    #city, #car {
+        padding-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    header {
+        margin: 0;
+        background: #4aaaa5;
+        border: none;
+        position: static;
+    } 
+
+    .main-container {
+        padding-top: 0;
+    }
+
+    .content {
+        width: 100%;
+        height: 80px;
+    }
+
+    .name {
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-header {
+        padding: 0;
+        animation-duration: .25s
+    }
+
+    nav {
+        padding-top: 80px;
+    }
+
+    .nav-bar {
+        position: static;
+        text-align: center;
+        padding: 15px 0;
+        background: #ffffff;
+        margin: 0;
+        border-bottom: solid;
+        border-width: 2px;
+        border-color: #cccccc;
+    }
+
+    .main-content {
+        height: 100%;
+    }
+
+    .portfolio-section, .main-content {
+        margin: 60px auto 10px;
+
+    }
+
+    .about {
+        margin: 20px;
+    }
+
+    #bio-image {
+        display: block;
+        padding-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    .images {
+        width: 100%;
+    }
+    
+    .portfolio-section {
+        height: 100%;
+    }
 }
