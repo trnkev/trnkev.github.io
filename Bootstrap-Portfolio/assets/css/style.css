@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #777777;
+    background-image: url(../images/morocco.png);
+
+}
+
+h1,h2 {
+    /*background: #4aaaa5;*/
+    color: #4aaaa5;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+nav {
+    padding: 20px 0;
+    margin: auto;
+    position: relative;
+}
+
+#nav-bar {
+    right: 0;
+    position: absolute;
+}
+
+.nav-item {
+    display: inline;
+    padding: 0 20px;
+}
+
+#bio {
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+    margin: 20px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #777777;
+}
+
+header {
+    background: #ffffff;
+    border-style: solid none;
+    border-width: 1px;
+    border-color: #cccccc;
+    margin: 20px auto;
+    height: 80px;
+}
+
+footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#name {
+    float: left;
+    background: #4aaaa5;
+    height: 100%;
+    width: 30%;
+}
+
+#content {
+    width: 960px;
+    margin: auto;
+    height: 100%;
+}
+
+#main-header {
+    background: #4aaaa5;
+    color: #ffffff;
+    padding-left: 20px;
+} 
+
+#main-content {
+    clear: both;
+    width: 960px;
+    height: 400px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+}
+
+#about {
+    margin: 40px 20px;
+
+}
+
+#bio-image {
+    float: left;
+    transform: rotate(90deg);
+    width: 200px;
+    margin: 30px 0 30px 0;
+    padding-top: 20px;
+}
+
+#footer-bar {
+    background: #777777;
+    border-top: 10px solid #4aaaa5;
+}
+
+#copyright {
+    color: #ffffff;
+    padding: 20px 0 10px;
+}
+
+.divider {
+    border-right: 1px solid #dddddd;
+}
+
+#info {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.user {
+    width: 100%;
+}
+
+#text-input {
+    width: 100%;
+    height: 100px;
+    border-color: #dddddd;
+}
+
+#submit-button {
+    padding: 10px 20px;
+    background: #4aaaa5;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+#gallery {
+    list-style: none;
+    padding: 0;
+    overflow: scroll;
+    width: 100%;
+    height: 400px;
+}
+
+#city {
+    float: left;
+    padding-right: 50px;
+}
+
+#bike {
+    float: left;
+}
+
+#car {
+    clear: both;
+    float: left;
+    padding-right: 50px;
+}
+
+#food {
+    float: left;
+}
+
+#business {
+    clear: both;
+    float: left;
+}
+
+.list {
+    padding-bottom: 5px;
+}
+
+.image {
+    position: relative;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    background: #4aaaa5;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.portfolio-text {
+    color: white;
+    font-size: 12px;
+}
+
+.portfolio-section {
+    clear: both;
+    width: 960px;
+    height: 480px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+}
+
+.images {
+    width: 110px;
+}
+
+.fields {
+    padding-bottom: 5px;
+}
