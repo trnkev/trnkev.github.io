@@ -1,0 +1,68 @@
+body {
+    margin: 0 auto;
+    width: 960px;
+    min-height: 100vh;
+    background: black;
+    color: white;
+}
+
+header {
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0 auto -45px;
+    font-family: 'Monoton', cursive;
+    font-size: 100px;
+    text-align: center;
+    /* For browsers that do not support. */
+    background: red;
+    background: repeating-linear-gradient(red ,orange 10%,yellow 10%,green 10%,blue 20%,indigo 20%,violet 20%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h2 {
+    margin: 0;
+    padding-left: 200px;
+    text-align: center;
+    font-family: 'Erica One', cursive;
+    font-size: 33px;
+    color: yellow;
+}
+
+p {
+    height: 20px;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+}
+
+#initial-text {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 20px;
+    color: yellow;
+}
+
+.container {
+    width: 550px;
+    min-height: 60vh;
+    margin: auto;
+    border: yellow dotted 10px;
+}
+
+.container > .row {
+    min-height: 25vh;
+    padding-top: 20px;
+}
+
+.container > .row p {
+    margin: 5px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Disco Guess Game</title>
+        <link href="https://fonts.googleapis.com/css?family=Erica+One|Fredoka+One|Monoton" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Word Guess</h1>
+            <h2>Disco style</h2>
+        </header>
+        <div class="row">
+            <p><span id="track"></span></p>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <!-- album cover -->
+                    <img id="image" src="assets/images/disco-ball.jpg">
+                </div>
+                <div id="parent" class="row">
+                    <!-- content -->
+                    <p id="initial-text">Press any Key to get started!</p>
+                    <p>Guess which band I'm thinking of</p>
+                    <p>Wins: <span id="wins">0</span></p>
+                    <p>Losses: <span id="losses">0</span></p>
+                    <p>Current Word</p>
+                    <p id="word"></p>
+                    <p>Number of Guesses: <span id="tries">9</span></p>
+                    <p>Your Guesses so far: <span id="guesses"></span></p>
+                </div>
+            </div>
+        </div>
+        <script src="assets/javascript/game.js"></script>
+    </body>
+</html>
