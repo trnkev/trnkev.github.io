@@ -18,6 +18,10 @@ a:link, a:visited {
     color: black;
 }
 
+#about-me {
+    margin-top: 30px;
+}
+
 header {
     background: #ffffff;
     border-style: solid none;
