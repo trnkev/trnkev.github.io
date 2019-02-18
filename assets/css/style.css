@@ -1,13 +1,9 @@
 body {
     margin: 0;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #777777;
-    background-image: url(../images/morocco.png);
-
 }
 
 h1,h2 {
-    color: #4aaaa5;
     font-family: Georgia, Times, "Times New Roman", serif;
 }
 
@@ -19,7 +15,7 @@ nav {
 
 a:link, a:visited {
     text-decoration: none;
-    color: #777777;
+    color: black;
 }
 
 header {
@@ -89,30 +85,14 @@ input:hover {
     /* background: #4aaaa5; */
     color: #ffffff;
     padding-left: 20px;
-    animation-duration: .5s;
-    animation-name: slide;
 } 
-
-@keyframes slide {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
-
 .main-content {
     clear: both;
     width: 960px;
     height: 400px;
     margin: 20px auto;
     background: #ffffff;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #dddddd;
+
 }
 
 .about {
@@ -122,15 +102,13 @@ input:hover {
 
 #bio-image {
     float: left;
-    transform: rotate(90deg);
     width: 200px;
     margin: 30px 0 30px 0;
-    padding-top: 20px;
+    padding-right: 20px;
 }
 
 .footer-bar {
-    background: #777777;
-    border-top: 10px solid #4aaaa5;
+    background: black;
 }
 
 .copyright {
@@ -232,9 +210,6 @@ input:hover {
     height: 916px;
     margin: 20px auto;
     background: #ffffff;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #dddddd;
 }
 
 .images {
@@ -307,7 +282,6 @@ li a:hover {
 
     .main-header {
         padding: 0;
-        animation-duration: .25s
     }
 
     nav {
