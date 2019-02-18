@@ -232,7 +232,6 @@ input:hover {
     }
 }
 
-
 @media screen and (max-width: 768px) {
     .images {
         width: 260px;
@@ -246,7 +245,6 @@ input:hover {
         padding-right: 0;
     }
 }
-
 
 @media screen and (max-width: 640px) {
     header {
