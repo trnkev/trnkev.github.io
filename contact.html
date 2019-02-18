@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <title>Contact</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    </head>
-    <body>
-        <header>
-            <section class="content">
-                <div class="name">
-                    <h1 class="main-header">Kevin Tran</h1>
-                </div>
-                <nav>
-                    <ul class="nav-bar">
-                        <li class="divider nav-item"><a href="index.html">About</a></li>
-                        <li class="divider nav-item"><a href="portfolio.html">Portfolio</a></li> 
-                        <li class="nav-item"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </section>
-        </header>
-            
-        <section class="main-container">
-            <section class="main-content">
-                <h2 class="about">Contact</h2>
-                <form class="wrap">
-                    <ul id="info">
-                        <li class="fields">Name<br><input class="user" type="text" placeholder="John Smith"></li>
-                        <li class="fields">Email<br><input class="user" type="email" placeholder="example@gmail.com"></li>
-                        <li class="fields">Message<br><textarea id="text-input"></textarea></li>
-                    </ul>
-                    <input id="submit-button" type="submit">
-                </form>
-            </section>
-        </section>
 
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
-        <footer>
-            <div class="footer-bar">
-                <div class="copyright">© 2019 Kevin Tran</div>
+<body>
+    <header>
+        <section class="content">
+            <div class="name">
+                <h1 class="main-header">Kevin Tran</h1>
             </div>
-        </footer>
-    </body>
+            <nav>
+                <ul class="nav-bar">
+                    <li class="divider nav-item"><a href="index.html">About</a></li>
+                    <li class="divider nav-item"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <section class="main-container">
+        <section class="main-content">
+            <h2 class="about">Contact</h2>
+            <form class="wrap">
+                <ul id="info">
+                    <li class="fields">
+                        <!-- Name<br><input class="user" type="text" placeholder="John Smith"> -->
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" placeholder="Kevin Tran">
+                        </div>
+                    </li>
+                    <li class="fields">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" placeholder="example@gmail.com">
+                        </div>
+                    </li>
+                    <li class="fields">
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </li>
+                </ul>
+                <input id="submit-button" type="submit">
+            </form>
+        </section>
+    </section>
+
+
+    <footer>
+        <div class="footer-bar">
+            <div class="copyright">© 2019 Kevin Tran</div>
+        </div>
+    </footer>
+</body>
+
 </html>
