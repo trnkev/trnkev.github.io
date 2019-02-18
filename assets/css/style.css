@@ -306,10 +306,12 @@ input:hover {
 
     #bio-image {
         display: block;
-        padding-top: 10px;
+        padding: 0;
         margin-left: auto;
         margin-right: auto;
         float: none;
+        padding: 0;
+        width: 100%;
     }
 
     .images {
